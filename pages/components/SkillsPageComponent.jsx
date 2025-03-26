@@ -42,7 +42,7 @@ export default function Skills() {
             <div className="flex justify-between">
               {" "}
               <span className="flex items-center gap-2">
-                Html <FaHtml5 className="text-orange-500" size={25} />
+                Html5 <FaHtml5 className="text-orange-500" size={25} />
               </span>
               <span>85%</span>{" "}
             </div>

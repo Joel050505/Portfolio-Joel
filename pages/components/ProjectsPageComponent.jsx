@@ -2,8 +2,7 @@ import { useContext } from "react";
 import AppContext from "../contexts/PortfolioContext";
 
 export default function Projects() {
-  const { state, setState, projectsText, setprojectsText } =
-    useContext(AppContext);
+  const { projectsText } = useContext(AppContext);
 
   return (
     <div>

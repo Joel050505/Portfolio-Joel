@@ -1,13 +1,24 @@
 import "@/styles/globals.css";
-import { AppProvider } from "./contexts/PortfolioContext";
+
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { AppProvider } from "./contexts/PortfolioContext";
+import { ThemeProvider } from "next-themes";
+import { Poppins } from "next/font/google";
+import "../styles/globals.css"; // If you have global styles
+
+const poppinsFont = Poppins({
+  weight: ["300", "400", "600", "700"],
+  subsets: ["latin"],
+});
 
 export default function App({ Component, pageProps }) {
   return (
-    <AppProvider>
-      <Component {...pageProps} />
-      <Footer />
-    </AppProvider>
+    <div className={`${poppinsFont.className}`}>
+      <AppProvider>
+        <ThemeProvider attribute="class">
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </AppProvider>
+    </div>
   );
 }
