@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 import { LuSunMoon } from "react-icons/lu";
 import { FaGithubSquare, FaTwitterSquare, FaLinkedin } from "react-icons/fa";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function Header() {
   const [darkMode, setDarkMode] = useState(false);
@@ -52,7 +53,13 @@ export default function Header() {
 
       <div className="flex flex-col justify-center items-center gap-4 place-items-center p-16 w-full">
         <div className="bg-gray-200 w-40 h-40 rounded-full border-2 border-gray-300">
-          <Image href="/6502423.jpg" alt="Joel" width={40} height={40} />
+          <Image
+            src={"/6502423.jpg"}
+            alt="DEV"
+            width={180}
+            height={180}
+            className="rounded-full"
+          />
         </div>
         <h1 className="text-gray-800 dark:text-white font-bold text-xl w-full text-center">
           Hello, I'm <span className="text-blue-600">Joel</span>
@@ -61,7 +68,7 @@ export default function Header() {
       {/* <hr className="border-t-2 border-black my-4" /> */}
 
       <div className="flex flex-col gap-2 font-semibold">
-        <p className="font-semibold text-xl"> Contact</p>
+        <p className="font-semibold text-xl">Contact</p>
         <li className="flex items-center gap-6">
           {" "}
           <BsFillTelephoneFill /> <span>072-329-63-33</span>
@@ -119,12 +126,12 @@ export default function Header() {
         </p>
         <div className="flex flex-col gap-4 text-sm font-semibold">
           <p className="flex gap-2 flex-wrap bg-gray-200 p-2 rounded-xl dark:bg-slate-600">
-            <p> YrkesHögskola - Chas Academy</p>
-            <p>Frontend deveolper for mobile & webb</p>
-            <p>2024-2026 current</p>
+            <p>Chas Academy</p>
+            <p>Frontend developer for mobile & webb</p>
+            <p>2024- </p>
           </p>
           <p className="flex gap-2 flex-wrap bg-gray-200 dark:bg-slate-600 p-2 rounded-xl">
-            Gymnasium - Barn & fritid, 2021-2024
+            Barn & fritid, 2021-2024
           </p>
         </div>
       </div>

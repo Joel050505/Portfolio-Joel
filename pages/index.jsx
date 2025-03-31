@@ -3,6 +3,7 @@ import Skills from "../components/SkillsPageComponent";
 import Projects from "../components/ProjectsPageComponent";
 import AboutPage from "../components/AboutPageComponent";
 import ScrollToTopButton from "../components/ScrollToTop";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <AboutPage />
         <Projects />
         <Skills />
+        <Footer />
       </div>
     </div>
   );
