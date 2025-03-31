@@ -7,21 +7,19 @@
   padding: 0;
   box-sizing: border-box;
   --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity, 1)) /* #f9fafb */;
   min-height: screen;
+  scroll-behavior: smooth;
 }
 
 html,
 body {
   font-family: var(--font-poppins), sans-serif;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 #root, /* If using React with a root div */
 #__next {
-  /* If using Next.js */
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -41,7 +39,6 @@ body::before {
   background-size: 20px 20px; /* Storlek på rutor */
   background-image: linear-gradient(rgba(0, 0, 0, 0.02) 1px, transparent 1px),
     linear-gradient(90deg, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
-
   pointer-events: none;
   animation: moveGrid 40s linear infinite;
 }

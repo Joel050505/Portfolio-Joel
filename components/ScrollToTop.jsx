@@ -32,10 +32,10 @@ export default function ScrollToTopButton() {
     isVisible && (
       <button
         onClick={scrollToTop}
-        className="fixed bottom-4 text-2xl font-semibold right-4 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center duration-300"
+        className="fixed bottom-4 text-2xl z-10 font-semibold right-4 w-12 h-12 bg-black text-white rounded-full flex items-center justify-center duration-300"
         aria-label="Scroll to top"
       >
-        {/* <PiArrowUpThin className="text-3xl" /> */}↑
+        ↑
       </button>
     )
   );

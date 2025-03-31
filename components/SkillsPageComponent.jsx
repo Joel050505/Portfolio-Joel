@@ -1,4 +1,4 @@
-import { FaReact, FaHtml5, FaCss3Alt } from "react-icons/fa";
+import { FaReact, FaHtml5, FaCss3Alt, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
@@ -7,9 +7,9 @@ export default function Skills() {
   return (
     <div>
       <div className="mt-10 sm:flex flex-col justify-center mb-20">
-        <div className="grid grid-cols-1 sm:grid-cols-2 p-20 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-1 p-20 gap-10">
           <div className="flex flex-col gap-2">
-            <h2 className="text-3xl mb-8 text-gray-800 font-bold">
+            <h2 className="text-3xl mb-8 text-gray-800 dark:text-white font-bold">
               Technical Skills
             </h2>
             <div className="flex justify-between items-center">
@@ -85,7 +85,7 @@ export default function Skills() {
               {" "}
               <span className="flex items-center gap-2">
                 Next.js
-                <SiNextdotjs size={25} className="text-black" />
+                <SiNextdotjs size={25} className="text-black dark:text-white" />
               </span>
               <span>65%</span>{" "}
             </div>
@@ -95,10 +95,27 @@ export default function Skills() {
                 style={{ width: 65 + "%" }}
               ></div>
             </div>
+            <div className="flex justify-between">
+              {" "}
+              <span className="flex items-center gap-2">
+                Python
+                <FaPython
+                  size={25}
+                  className="text-blue-600 dark:text-blue-500"
+                />
+              </span>
+              <span>30%</span>{" "}
+            </div>
+            <div className="w-full bg-gray-200 rounded-full h-3">
+              <div
+                className="bg-blue-600 h-3 rounded-full"
+                style={{ width: 30 + "%" }}
+              ></div>
+            </div>
           </div>
 
           <div>
-            <h2 className="text-3xl mb-8 text-gray-800 font-bold">
+            <h2 className="text-3xl mb-8 text-gray-800 dark:text-white font-bold">
               Soft Skills
             </h2>
             <div className="flex flex-wrap gap-4">
@@ -119,7 +136,7 @@ export default function Skills() {
                 Adaptability
               </span>
               <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base hover:scale-105 duration-150 cursor-pointer">
-                Adaptability
+                Time Management
               </span>
             </div>
           </div>
