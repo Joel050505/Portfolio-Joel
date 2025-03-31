@@ -1,8 +1,4 @@
-import { useContext } from "react";
-import PortfolioContext from "../contexts/PortfolioContext";
 import Header from "../components/Header";
-import Footer from "../components/Footer";
-import FirstPage from "../components/FirstPageComponent";
 import Skills from "../components/SkillsPageComponent";
 import Projects from "../components/ProjectsPageComponent";
 import AboutPage from "../components/AboutPageComponent";
