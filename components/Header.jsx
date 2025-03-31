@@ -51,7 +51,9 @@ export default function Header() {
       </motion.div>
 
       <div className="flex flex-col justify-center items-center gap-4 place-items-center p-16 w-full">
-        <div className="bg-gray-200 w-40 h-40 rounded-full border-2 border-gray-300"></div>
+        <div className="bg-gray-200 w-40 h-40 rounded-full border-2 border-gray-300">
+          <Image href="/6502423.jpg" alt="Joel" width={40} height={40} />
+        </div>
         <h1 className="text-gray-800 dark:text-white font-bold text-xl w-full text-center">
           Hello, I'm <span className="text-blue-600">Joel</span>
         </h1>
