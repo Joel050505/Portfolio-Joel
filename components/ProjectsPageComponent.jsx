@@ -65,8 +65,7 @@ export default function Projects() {
           <Project
             project="QuizMaster"
             description="A quiz game with questions from different subjects. See result
-                from every game. Check the leaderboard too see your knowledge
-                and compete with yourself"
+                from every game. Check a personal leaderboard"
             imageUrl="/chas_quiz.png"
             alt="Quizmaster"
             skillsUsed={["Html", "JavaScript", "React", "Next js", "Tailwind"]}

@@ -17,6 +17,9 @@ body {
   display: flex;
   flex-direction: column;
 }
+html {
+  transition: background-color 3s ease, color 3s ease;
+}
 
 #root, /* If using React with a root div */
 #__next {

@@ -19,34 +19,35 @@ export default function Project({
   projectLink,
 }) {
   return (
-    <div className="bg-white relative dark:bg-slate-600 rounded-lg shadow-md dark:shadow-2xl dark:shadow-black overflow-hidden hover:scale-105 cursor-pointer duration-300 hover:shadow-xl">
+    <div className="relative rounded-lg overflow-hidden group cursor-pointer shadow-md hover:scale-105 transition-transform duration-300 dark:shadow-black">
+      {/* Background image */}
       <Image
         src={imageUrl}
         alt={alt}
-        className="h-48 w-full object-cover"
+        className="w-full sm:h-62 h-72 object-cover"
         width={500}
         height={400}
         priority={true}
       />
-      <div className="p-6 gap-2 bg-gray-50 dark:bg-gray-800 min-h-full">
-        <h3 className="text-xl font-semibold mb-2 dark:text-white">
-          {project}
-        </h3>
-        <p className="text-gray-700 dark:text-white">{description}</p>
-        <div className="flex flex-wrap gap-2 mt-2">
-          {skillsUsed.map((skill, index) => (
-            <SmallSkill key={index} skill={skill} />
-          ))}
+
+      {/* Sliding overlay */}
+      <div className="absolute bottom-0 left-0 w-full h-0 group-hover:h-full bg-white dark:bg-slate-800 text-black dark:text-white overflow-hidden transition-all duration-500 ease-in-out p-6 flex flex-col justify-between">
+        <div>
+          <h3 className="text-xl font-bold mb-2">{project}</h3>
+          <p className="text-sm">{description}</p>
+          <div className="flex flex-wrap gap-2 mt-4">
+            {skillsUsed.map((skill, index) => (
+              <SmallSkill key={index} skill={skill} />
+            ))}
+          </div>
         </div>
-        <div className="flex gap-4">
+
+        <div className="flex gap-4 mt-4">
           <a target="_blank" rel="noopener noreferrer" href={gitLink}>
-            <FaGithubSquare
-              className="text-black mt-4 dark:text-white"
-              size={25}
-            />
+            <FaGithubSquare size={28} />
           </a>
           <a target="_blank" rel="noopener noreferrer" href={projectLink}>
-            <FaEye className="text-black mt-4 dark:text-white" size={25} />
+            <FaEye size={28} />
           </a>
         </div>
       </div>

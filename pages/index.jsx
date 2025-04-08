@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:flex-row dark:bg-gray-800 dark:text-white subpixel-antialiase">
+    <div className="flex flex-col duration-1000 md:flex-row dark:bg-gray-800 dark:text-white subpixel-antialiase">
       <div className="flex flex-col border-gray-200 border-r-2">
         <Header />
       </div>

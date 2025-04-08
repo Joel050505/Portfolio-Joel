@@ -2,6 +2,8 @@ import { FaReact, FaHtml5, FaCss3Alt, FaPython } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiNextdotjs } from "react-icons/si";
+import SoftSkills from "./SoftSkillComponent";
+import SkillBar from "./SkillsComponent";
 
 export default function Skills() {
   return (
@@ -12,106 +14,55 @@ export default function Skills() {
             <h2 className="text-3xl mb-8 text-gray-800 dark:text-white font-bold">
               Technical Skills
             </h2>
-            <div className="flex justify-between items-center">
-              {" "}
-              <span className="flex items-center gap-2">
-                React <FaReact className="text-blue-400" size={25} />
-              </span>
-              <span>60%</span>{" "}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div
-                className="bg-blue-600 h-3 rounded-full"
-                style={{ width: 60 + "%" }}
-              ></div>
-            </div>
-            <div className="flex justify-between items-center">
-              {" "}
-              <span className="flex items-cente gap-2">
-                Javascript{" "}
-                <IoLogoJavascript size={25} className="text-yellow-500" />
-              </span>
-              <span>70%</span>{" "}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div
-                className="bg-blue-600 h-3 rounded-full"
-                style={{ width: 70 + "%" }}
-              ></div>
-            </div>
-            <div className="flex justify-between">
-              {" "}
-              <span className="flex items-center gap-2">
-                Html5 <FaHtml5 className="text-orange-500" size={25} />
-              </span>
-              <span>85%</span>{" "}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div
-                className="bg-blue-600 h-3 rounded-full"
-                style={{ width: 85 + "%" }}
-              ></div>
-            </div>
 
-            <div className="flex justify-between">
-              {" "}
-              <span className="flex items-center gap-2">
-                CSS
-                <FaCss3Alt size={25} className="text-blue-600" />
-              </span>
-              <span>80%</span>{" "}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div
-                className="bg-blue-600 h-3 rounded-full"
-                style={{ width: 80 + "%" }}
-              ></div>
-            </div>
-            <div className="flex justify-between">
-              {" "}
-              <span className="flex items-center gap-2">
-                TailwindCSS
-                <RiTailwindCssFill size={25} className="text-cyan-400" />
-              </span>
-              <span>70%</span>{" "}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div
-                className="bg-blue-600 h-3 rounded-full"
-                style={{ width: 70 + "%" }}
-              ></div>
-            </div>
-            <div className="flex justify-between">
-              {" "}
-              <span className="flex items-center gap-2">
-                Next.js
+            <SkillBar
+              label="React"
+              icon={<FaReact className="text-blue-400" size={25} />}
+              percentage={60}
+            />
+
+            <SkillBar
+              label="Javascript"
+              icon={<IoLogoJavascript size={25} className="text-yellow-500" />}
+              percentage={70}
+            />
+
+            <SkillBar
+              label="Html5"
+              icon={<FaHtml5 className="text-orange-500" size={25} />}
+              percentage={85}
+            />
+
+            <SkillBar
+              label="CSS"
+              percentage={80}
+              icon={<FaCss3Alt size={25} className="text-blue-600" />}
+            />
+
+            <SkillBar
+              percentage={70}
+              label="TailwindCSS"
+              icon={<RiTailwindCssFill size={25} className="text-cyan-400" />}
+            />
+
+            <SkillBar
+              label="Next.js"
+              percentage={65}
+              icon={
                 <SiNextdotjs size={25} className="text-black dark:text-white" />
-              </span>
-              <span>65%</span>{" "}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div
-                className="bg-blue-600 h-3 rounded-full"
-                style={{ width: 65 + "%" }}
-              ></div>
-            </div>
-            <div className="flex justify-between">
-              {" "}
-              <span className="flex items-center gap-2">
-                Python
+              }
+            />
+
+            <SkillBar
+              label="Python"
+              percentage={30}
+              icon={
                 <FaPython
                   size={25}
                   className="text-blue-600 dark:text-blue-500"
                 />
-              </span>
-              <span>30%</span>{" "}
-            </div>
-            <div className="w-full bg-gray-200 rounded-full h-3">
-              <div
-                className="bg-blue-600 h-3 rounded-full"
-                style={{ width: 30 + "%" }}
-              ></div>
-            </div>
+              }
+            />
           </div>
 
           <div>
@@ -120,24 +71,12 @@ export default function Skills() {
             </h2>
             <div className="flex flex-wrap gap-4">
               {" "}
-              <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base hover:scale-105 duration-150 cursor-pointer">
-                Problem Solving
-              </span>{" "}
-              <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base hover:scale-105 duration-150 cursor-pointer">
-                Teamwork
-              </span>
-              <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base hover:scale-105 duration-150 cursor-pointer">
-                Communication
-              </span>
-              <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base hover:scale-105 duration-150 cursor-pointer">
-                Creativity
-              </span>
-              <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base hover:scale-105 duration-150 cursor-pointer">
-                Adaptability
-              </span>
-              <span className="bg-gray-100 text-gray-700 px-4 py-2 rounded-full text-base hover:scale-105 duration-150 cursor-pointer">
-                Time Management
-              </span>
+              <SoftSkills text="Problem solving" />
+              <SoftSkills text="Teamwork" />
+              <SoftSkills text="Communication" />
+              <SoftSkills text="Creativity" />
+              <SoftSkills text="Adaptability" />
+              <SoftSkills text="Time Management" />
             </div>
           </div>
         </div>

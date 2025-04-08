@@ -13,14 +13,14 @@ const poppinsFont = Poppins({
 export default function App({ Component, pageProps }) {
   return (
     <motion.div
-      initial={{ opacity: 0, x: -180 }} // Start state
-      animate={{ opacity: 1, x: 0 }} // End state
-      transition={{
-        duration: 1,
-        type: "spring", // Bounce effect
-        stiffness: 300, // Strength of the bounce
-        damping: 6, // How quickly the bounce settles
-      }}
+      // initial={{ opacity: 0, x: -180 }} // Start state
+      // animate={{ opacity: 1, x: 0 }} // End state
+      // transition={{
+      //   duration: 1,
+      //   type: "spring", // Bounce effect
+      //   stiffness: 300, // Strength of the bounce
+      //   damping: 6, // How quickly the bounce settles
+      // }}
       className={`${poppinsFont.className}`}
     >
       <AppProvider>
