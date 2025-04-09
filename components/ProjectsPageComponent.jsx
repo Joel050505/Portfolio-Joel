@@ -39,18 +39,16 @@ export default function Projects() {
               </div>
             );
           })}
-
-          {/* <Project
+          <Project
             project="Willie the runner"
             description="Collect coins, unlock characters, and beat your high score in
                 this fun 2D game. Level up complete missions after mission and
                 get rewarded."
-            imageUrl="/willie-the-runner.jpg"
+            imageUrl="/Willie-the-runner.jpg"
             alt="Infinity running game"
             skillsUsed={["Css", "Javascript", "Html"]}
             gitLink={"https://github.com/Joel050505/JumpGame"}
-          /> */}
-
+          />
           <Project
             imageUrl="/chas_pokemon.png"
             alt="Pokedex project"
@@ -60,7 +58,6 @@ export default function Projects() {
             skillsUsed={["Html", "JavaScript", "React", "Next.JS", "Tailwind"]}
             gitLink={"https://github.com/Joel050505/chas_pokemon"}
           />
-
           <Project
             project="QuizMaster"
             description="A quiz game with questions from different subjects. See result
