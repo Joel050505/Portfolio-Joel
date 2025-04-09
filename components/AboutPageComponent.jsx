@@ -2,25 +2,46 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 // Helper component to animate text word-by-word
-function AnimatedText({ text, delayPerWord = 0.08, className = "" }) {
+function AnimatedText({
+  text,
+  delayPerWord = 0.08,
+  className = "",
+  delayPerLetter = 0.01,
+}) {
   const words = text.split(" ");
 
   return (
-    <p className={`flex flex-wrap gap-2 ${className}`}>
-      {words.map((word, index) => (
-        <motion.span
-          key={index}
-          initial={{ y: 20, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{
-            delay: index * delayPerWord,
-            duration: 0.4,
-            ease: "easeOut",
-          }}
-          className="inline-block"
-        >
-          {word}
-        </motion.span>
+    <p className={`flex flex-wrap gap-[5px] ${className}`}>
+      {words.map((word, wordIndex) => (
+        <span key={wordIndex} className="inline-block">
+          {word.split("").map((letter, letterIndex) => (
+            <motion.span
+              key={`${wordIndex}-${letterIndex}`}
+              initial={{ y: -20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{
+                delay: (wordIndex * word.length + letterIndex) * delayPerLetter,
+                duration: 0.4,
+                ease: "easeOut",
+              }}
+              className="inline-block"
+            >
+              {letter}
+            </motion.span>
+          ))}
+          {/* Add space between words */}
+          <motion.span
+            key={`space-${wordIndex}`}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              delay: (wordIndex * word.length + word.length) * delayPerLetter,
+              duration: 0.1,
+            }}
+          >
+            &nbsp;
+          </motion.span>
+        </span>
       ))}
     </p>
   );
@@ -66,7 +87,7 @@ export default function AboutPage() {
         </div>
 
         <motion.div
-          className="flex gap-4"
+          className="flex place-content-start gap-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2, delay: 0.6 }}

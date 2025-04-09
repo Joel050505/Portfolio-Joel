@@ -12,7 +12,10 @@ export default function Projects() {
           {" "}
           <h1 className="text-center text-4xl font-bold text-gray-800 dark:text-white mb-4">
             My projects
-          </h1>{" "}
+          </h1>
+          <p className="text-center font-bold">
+            Hover over card to show details
+          </p>
         </div>
         <div className="grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 gap-8 p-10 ">
           {projectsText.map((item) => {
@@ -68,6 +71,7 @@ export default function Projects() {
             gitLink={"https://github.com/Joel050505/chas_pokemon"}
           />
           <Project
+            alt="Chase the rabbit"
             project="Chase the rabbit"
             description="Chase the rabbit is a snake(classic) inspired game where you can collect coins, check your highscore and buy new characters"
             imageUrl="/favicon-rabbit.jpg"

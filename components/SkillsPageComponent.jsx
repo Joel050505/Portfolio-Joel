@@ -28,7 +28,9 @@ export default function Skills() {
               <h2 className="text-3xl mb-8 text-gray-800 dark:text-white font-bold">
                 Technical Skills
               </h2>
-              <AnimatedSkillsComponent />
+              <DropIn delay={0.07}>
+                <AnimatedSkillsComponent />
+              </DropIn>
             </DropIn>
 
             <DropIn delay={0.2}>
