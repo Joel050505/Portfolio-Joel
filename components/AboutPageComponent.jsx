@@ -25,6 +25,12 @@ function AnimatedText({ text, delayPerWord = 0.08, className = "" }) {
     </p>
   );
 }
+const handleDownload = () => {
+  const link = document.createElement("a");
+  link.href = "/Cv Joel Kilic - Coding.pdf"; // path to your file
+  link.download = "CV-Joel-Kilic"; // name to save as
+  link.click();
+};
 
 export default function AboutPage() {
   const handleScroll = () => {
@@ -72,7 +78,10 @@ export default function AboutPage() {
             View Projects
           </button>
 
-          <button className="p-2 bg-gray-200 dark:bg-gray-500 dark:hover:bg-gray-600 rounded-md w-32 hover:bg-gray-300 transition-all ease-out duration-300">
+          <button
+            onClick={handleDownload}
+            className="p-2 bg-gray-200 dark:bg-gray-500 dark:hover:bg-gray-600 rounded-md w-32 hover:bg-gray-300 transition-all ease-out duration-300"
+          >
             Download CV
           </button>
         </motion.div>

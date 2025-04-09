@@ -1,13 +1,6 @@
 import SmallSkill from "./SmallSkill";
-import { FaGithub } from "react-icons/fa6";
 import Image from "next/image";
-import {
-  FaGithubSquare,
-  FaTwitterSquare,
-  FaLinkedin,
-  FaEye,
-} from "react-icons/fa";
-import Link from "next/link";
+import { FaGithubSquare, FaEye } from "react-icons/fa";
 
 export default function Project({
   project,

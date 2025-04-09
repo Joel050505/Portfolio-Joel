@@ -57,7 +57,7 @@ export default function Header() {
           size={20}
         />
         <LuSunMoon
-          className={`cursor-pointer absolute transition-opacity duration-300 ${
+          className={`cursor-pointer absolute text-cyan-400 transition-opacity duration-300 ${
             darkMode ? "opacity-100" : "opacity-0"
           }`}
           onClick={toggleDarkMode}

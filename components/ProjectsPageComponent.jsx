@@ -71,6 +71,13 @@ export default function Projects() {
             skillsUsed={["Html", "JavaScript", "React", "Next js", "Tailwind"]}
             gitLink={"https://github.com/Joel050505/chas_pokemon"}
           />
+          <Project
+            project="Chase the rabbit"
+            description="Chase the rabbit is a snake(classic) inspired game where you can collect coins, check your highscore and buy new characters"
+            imageUrl="/favicon-rabbit.jpg"
+            skillsUsed={["Html", "JavaScript", "React", "Next js", "Tailwind"]}
+            gitLink={"https://github.com/Dantilldev/chase-the-rabbit"}
+          />
         </div>
       </div>
     </div>
