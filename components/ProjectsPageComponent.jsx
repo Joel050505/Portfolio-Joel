@@ -45,7 +45,7 @@ export default function Projects() {
             description="  Collect coins, unlock characters, and beat your high score in
                 this fun 2D game. Level up complete missions after mission and
                 get rewarded."
-            imageUrl="/willie_the_runner.png"
+            imageUrl="/willie-the-runner.png"
             alt="Infinity running game"
             skillsUsed={["Css", "Javascript", "Html"]}
             gitLink={"https://github.com/Joel050505/JumpGame"}
