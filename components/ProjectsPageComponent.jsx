@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import AppContext from "../contexts/PortfolioContext";
 import Project from "./Project";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const { projectsText } = useContext(AppContext);
@@ -8,7 +9,11 @@ export default function Projects() {
   return (
     <div id="projects">
       <div className="mt-10 flex flex-col container mx-auto mb-4">
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
           {" "}
           <h1 className="text-center text-4xl font-bold text-gray-800 dark:text-white mb-4">
             My projects
@@ -16,7 +21,7 @@ export default function Projects() {
           <p className="text-center font-bold">
             Hover over card to show details
           </p>
-        </div>
+        </motion.div>
         <div className="grid md:grid-cols-1 lg:grid-cols-2 grid-cols-1 gap-8 p-10 ">
           {projectsText.map((item) => {
             return (
@@ -82,72 +87,4 @@ export default function Projects() {
       </div>
     </div>
   );
-}
-
-{
-  /* <div className="bg-white dark:bg-slate-600 rounded-lg shadow-md overflow-hidden hover:scale-105 cursor-pointer duration-300 hover:shadow-xl">
-<img src="" alt="Quizmaster" className="h-48 w-full object-cover" />
-<div className="p-6 bg-gray-50 dark:bg-slate-700 min-h-full">
-  <h3 className="text-xl font-semibold mb-2 dark:text-white">
-    QuizMaster
-  </h3>
-  <p className="text-gray-700 dark:text-white">
-    A quiz game with questions from different subjects. See result
-    from every game. Check the leaderboard too see your knowledge
-    and compete with yourself
-  </p>
-  <div className="flex flex-wrap gap-2 mt-2">
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      Html
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      JavaScript
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      React
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      Next js
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      Tailwind
-    </span>
-  </div>
-</div>
-</div> */
-}
-{
-  /* <div className="bg-white dark:bg-slate-600 rounded-lg shadow-md overflow-hidden hover:scale-105 cursor-pointer duration-300 hover:shadow-xl">
-<img
-  src=""
-  alt="Pokedex project"
-  className="h-48 w-full object-cover"
-/>
-<div className="p-6 bg-gray-50 dark:bg-slate-700 min-h-full">
-  <h3 className="text-xl font-semibold mb-2 dark:text-white">
-    Pokédex project
-  </h3>
-  <p className="text-gray-700 dark:text-white">
-    Pokédex where you can bookmark. Listen to pokeCries and check
-    pokémons indeviduallies stats
-  </p>
-  <div className="flex flex-wrap gap-2 mt-2">
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      Html
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      JavaScript
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      React
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      Next js
-    </span>
-    <span className="bg-blue-50 text-blue-600 px-2 py-1 rounded-full text-xs font-semibold">
-      Tailwind
-    </span>
-  </div>
-</div>
-</div> */
 }

@@ -46,6 +46,7 @@ function AnimatedText({
     </p>
   );
 }
+
 const handleDownload = () => {
   const link = document.createElement("a");
   link.href = "/Cv Joel Kilic - Coding.pdf"; // path to your file

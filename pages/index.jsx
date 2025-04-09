@@ -15,8 +15,8 @@ export default function Home() {
       <div className="flex flex-col">
         <ScrollToTopButton />
         <AboutPage />
-        <Projects />
         <Skills />
+        <Projects />
         <Footer />
       </div>
     </div>

@@ -115,9 +115,8 @@ export default function Header() {
             </li>
           </ul>
         </div>
+        <hr className="border-t-2 border-black my-4 dark:border-gray-400" />
       </DropIn>
-
-      <hr className="border-t-2 border-black my-4 dark:border-gray-400" />
 
       <DropIn delay={0.3}>
         <div className="flex flex-col gap-2 font-semibold">
@@ -140,9 +139,8 @@ export default function Header() {
             </a>
           </div>
         </div>
+        <hr className="border-t-2 border-black my-4 dark:border-gray-400" />
       </DropIn>
-
-      <hr className="border-t-2 border-black my-4 dark:border-gray-400" />
 
       <DropIn delay={0.4}>
         <div className="flex flex-col gap-4">
@@ -160,9 +158,8 @@ export default function Header() {
             </p>
           </div>
         </div>
+        <hr className="border-t-2 border-black my-4 dark:border-gray-400 " />
       </DropIn>
-
-      <hr className="border-t-2 border-black my-4 dark:border-gray-400 " />
 
       <DropIn delay={0.5}>
         <div>
@@ -174,9 +171,8 @@ export default function Header() {
             <li>Programming</li>
           </ul>
         </div>
+        <hr className="border-t-2 border-black my-4 dark:border-gray-400" />
       </DropIn>
-
-      <hr className="border-t-2 border-black my-4 dark:border-gray-400" />
 
       <DropIn delay={0.6}>
         <div>
