@@ -42,14 +42,13 @@ export default function Projects() {
 
           <Project
             project="Willie the runner"
-            description="  Collect coins, unlock characters, and beat your high score in
+            description="Collect coins, unlock characters, and beat your high score in
                 this fun 2D game. Level up complete missions after mission and
                 get rewarded."
             imageUrl="/willie-the-runner.jpg"
             alt="Infinity running game"
             skillsUsed={["Css", "Javascript", "Html"]}
             gitLink={"https://github.com/Joel050505/JumpGame"}
-            projectLink={"https://jump-game-chi.vercel.app/"}
           />
 
           <Project
